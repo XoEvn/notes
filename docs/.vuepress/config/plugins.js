@@ -30,4 +30,19 @@ module.exports = [
       },
     },
   ],
+  // vssue 评论插件
+    [
+      "vuepress-plugin-vssue-global",
+      {
+        platform: "github",
+        title: "[Comment]<%- frontmatter.title %>",
+        needComments: true,
+        // 其他的 Vssue 配置
+        autoCreateIssue: true,
+        clientId: "e69edd18c4c5da0acb04",
+        clientSecret: "a404e1f058046204f22e46941209d2680eedcc62",
+        owner: "XoEvn",
+        repo: "notes",
+      },
+    ],
 ]
